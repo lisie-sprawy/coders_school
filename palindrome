@@ -14,8 +14,8 @@ int main() {
 
     std::string x;
 
-    std::cout << "Chcesz wiedzieć, czy dane słowo jest palindromem?" <<  std::endl;
-    std::cout << "Podaj wyrażenie:";
+    std::cout << "Chcesz wiedzieć, czy dany wyraz jest palindromem?" <<  std::endl;
+    std::cout << "Podaj wyraz:";
     std::cin >> x;
 
     if (isPalindrome(x)) std::cout << "To nie jest palindrom!" << std::endl;
@@ -23,5 +23,3 @@ int main() {
     else std::cout << "To jest palindrom! "<< std::endl;
 
 }
-
-
