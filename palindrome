@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>
+
+bool isPalindrome(const std::string & text) 
+{
+for (int i = 0; i < (text.length()/2); i++) {
+  if (text[i] != text[text.length()-1-i]) 
+  return true;
+    }
+return false;
+}
+
+int main() {
+
+    std::string x;
+
+    std::cout << "Chcesz wiedzieć, czy dane słowo jest palindromem?" <<  std::endl;
+    std::cout << "Podaj wyrażenie:";
+    std::cin >> x;
+
+    if (isPalindrome(x)) std::cout << "To nie jest palindrom!" << std::endl;
+
+    else std::cout << "To jest palindrom! "<< std::endl;
+
+}
+
+
